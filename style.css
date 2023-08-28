@@ -1,0 +1,126 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:"Josefin Sans",sans-serif;
+    font-weight:300;
+
+}
+.container{
+    width:100vw;
+    min-height:100vh;
+    place-items:center;
+    display:grid;
+    background-color:gray;
+    
+}
+.inner-container{
+    animation: bouncing 0.5s ease 0s infinite alternate both;
+    width:40vw;
+    background-color:#fff;
+    padding:3rem -9rem;
+    border-radius:1rem;
+    box-shadow:0 1rem 1rem  -0.7rem rgba(0,0,0,0.4);
+
+    
+    
+    @keyframes bouncing{
+        0%{
+            bottom:0;
+            
+            
+        }
+        100%{
+            bottom:100px;
+        }
+        
+    }
+}
+.inner-container h2{
+    font-size:2.5rem;
+    font-weight:400;
+    margin:1rem  0  4rem 0;
+
+}
+.button{
+    padding: 0rem -5rem;
+    outline:none;
+    font-size:2rem;
+    font-weight:100;
+    display:flex;
+    margin:auto;
+    border:none;
+    text-transform:lowercase;
+    margin-top:4rem;
+    color:#111010;
+    background-color:rgba(204,177,195) ;
+    cursor:pointer;
+    float:center;
+    
+}
+.small{
+    
+    width:38vw;
+    height: 8vh;
+    background-color:black;
+   
+    border-radius:1rem;
+    box-shadow:0 1rem 1rem  -0.7rem rgba(0,0,0,0.4);
+    transition:width 1s,height 1s,background 4s;
+    /*@keyframes bouncing{
+        0%{
+            bottom:0;
+            
+            
+        }
+        100%{
+            bottom:50px;
+        }
+        
+    }*/
+    
+    
+}
+.small:hover{
+    width:0px;
+    background-color: black;
+}
+
+.butn{
+    float:right;
+    padding:0rem 1rem;
+    height:4vh;
+    text-align: center;
+    border-color: aqua;
+    margin-bottom: 70rem;
+}
+.butn:hover{
+    border:pink;
+}
+.right{
+    float:right;
+    padding:0rem 2rem;
+    height:10vh;
+    text-align: center;
+    border-color: aqua;
+    margin-top:-5rem;
+    
+}
+input.animation {
+	animation: input-animation 1000ms ease-in-out;
+}
+#form-wrap{
+	transition: all 800ms ease-in-out
+}
+h1.animation {
+	animation: input-animation 1200ms ease-in-out;
+}
+input:active, input:focus, button:active, button:focus {
+	background-position: 49.75% 100%;
+	color: var(secondary);
+	box-shadow: 0px 0px 0px 0 var(shadow);
+}
+
+    
+    
+    
